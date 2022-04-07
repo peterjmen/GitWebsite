@@ -1,6 +1,6 @@
 .layout2 .left {
 	/*flex: 1 1 0;*/
-	width: 20%;
+	min-width: 20%;
 	float: left;
 }
 
@@ -49,10 +49,12 @@
 .layoutPrices {
 	display: flex;
 	flex-direction: row;
+	column-gap: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
-
+/* 
 .leftPrices, .rightPrices, .centerPrices{
-	width: 150px;
-	margin: 20px;
-	
 }
+ */

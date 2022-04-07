@@ -512,13 +512,34 @@ button, .button {
 #serviceDescription{
 	text-align: left;
 	padding: 20px;
-	min-width: 300px;
+	min-width: 210px;
 
 }
 
 
 
 .leftPrices, .rightPrices, .centerPrices{
-padding:  20px;
-border:  2px solid #4A90E2;
+	padding:  20px;
+	border:  2px solid #4A90E2;
 }
+
+.contactUs{
+	margin-top: 5%;
+	margin-left: 5%;
+	float: left;
+	text-align: left;
+	width: 250px;
+	padding:  20px;
+	border:  2px solid #4A90E2;
+	height: 420px;
+}
+
+.map{
+	margin-top:50px;
+	float:center;
+	text-align: center;
+}
+
+.map img{
+	max-width:25%;
+	}
