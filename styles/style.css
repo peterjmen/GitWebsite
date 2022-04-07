@@ -516,4 +516,7 @@ button, .button {
 
 }
 
-
+.layoutPrices{
+padding:  20px;
+border:  1px solid #4A90E2;
+}
