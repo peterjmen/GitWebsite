@@ -25,7 +25,7 @@ body {
 
 #main {
 	float: left;
-	background: url("../images/cycle.jpeg") 0 0 no-repeat;
+	background: url("../images/cycl.jpeg") 0 0 no-repeat;
   background-color: #eee;
   background-size: cover;
   background-position: center;
