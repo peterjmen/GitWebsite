@@ -516,7 +516,9 @@ button, .button {
 
 }
 
-.layoutPrices{
+
+
+.leftPrices, .rightPrices, .centerPrices{
 padding:  20px;
-border:  1px solid #4A90E2;
+border:  2px solid #4A90E2;
 }

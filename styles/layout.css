@@ -29,19 +29,18 @@
 }
 
 
-.layoutPrices .left {
+.layoutPrices .leftPrices {
 	flex: 1;
 	text-align: center;
 }
 
-.layoutPrices .center {
+.layoutPrices .centerPrices {
 	flex: 1;
 	text-align: center;
 }
 
 
-
-.layoutPrices .right{
+.layoutPrices .rightPrices{
 	flex: 1;
 	text-align: center;
 
@@ -50,4 +49,10 @@
 .layoutPrices {
 	display: flex;
 	flex-direction: row;
+}
+
+.leftPrices, .rightPrices, .centerPrices{
+	width: 150px;
+	margin: 20px;
+	
 }
