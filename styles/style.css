@@ -1,0 +1,519 @@
+/*********************ISSUES
+.btnwrapper
+	trying to make just the button a clickable but it's doing the whole width of the page
+*/
+
+/* To set all text to sans-serif, center it, have the text black with a white background*/
+body {
+	margin: 0 auto;
+  /*background-color: #fff;*/
+  background-color: #eee;
+  color: #222;
+  font-family: sans-serif;
+  font-size: 14px;
+  min-height: 100%;
+  position: relative;
+  
+}
+
+.homepage {
+/*	background: url("../images/cycle.jpeg") 0 0 no-repeat;
+  background-size: cover;
+  background-color: #eee;*/
+  color: #eee;
+}
+
+#main {
+	float: left;
+	background: url("../images/cycle.jpeg") 0 0 no-repeat;
+  background-color: #eee;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height:700px;
+}
+
+html {
+  height: 100%;
+}
+
+html.homepage {
+  height: auto;
+}
+
+
+body, header, footer, nav, div {
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+	font-family: 'Raleway', sans-serif;
+}
+
+a { 
+	color: #4A90E2; 
+}
+
+p {
+line-height: 1.4em;}
+/* to change font size larger to and space if from the top of the screen */
+h1 {
+  font-size: 16px;
+  margin-left:  10px;
+  /*color: #fff;*/
+  color: #eee;
+
+}
+
+.subheading {
+	font-weight: 100;
+	font-size: smaller;
+}
+
+#logo {
+	padding-top:  10px;
+}
+
+#logo img {
+	float: left;
+	margin-top: 5px;
+	height:  70px;
+	width: auto;
+}
+
+#logo h1 {
+	float: left;
+	margin-top: 30px;
+}
+
+
+/* top bar displaying hello: guest/logged in name */
+
+.greeting {
+	text-align: center;
+	/*color: #31AEE5;*/
+	color: #eee;
+	/*background-color: #515151;*/
+	/*background-color: rgba(0,0,0,0.4);*/
+	background-color: #00224B;
+	padding: 12px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+}
+.homepage .greeting {
+/*	background-color: #515151;*/
+	background-color: #00224B;
+}
+
+.account {
+	margin-top: 15px;
+}
+
+
+header .socialMedia {
+	display: none;
+	cursor: pointer;
+}
+
+/* To make a list for the page section hyperlinks*/
+ol, ul {
+	list-style: none;
+/*	margin-left: 33%;
+	margin-right: 2%;
+	margin-top: -98px;*/
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: rgb(59, 64, 68);
+	padding: 0 20px 0 10px;
+	width: 100%;
+	-webkit-box-shadow: -1px 8px 15px -5px rgba(0,0,0,0.5); 
+	box-shadow: -1px 8px 15px -5px rgba(0,0,0,0.5);
+}
+
+header nav {
+	flex-grow: 1;
+	order:  1;
+	width: 100%;
+
+}
+
+/* To center the navigation menu and dicate it's width*/
+#nav {
+/*	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;*/
+}
+
+/* To put the listed links in blocks with borders and space the text from the edges */
+.primaryNav {
+	font-family: 'Raleway', sans-serif;
+	
+	list-style-position: inside;
+  padding-left: 0;
+  width: 100%;
+  font-weight: 500;
+  font-size: 13px;
+}
+.primaryNav li {float:  left;}
+.primaryNav li a{
+	display: inline-block;
+	/*width: 80px;*/
+	padding:  12px;
+	text-decoration: none;
+	/*color: #fff;*/
+	color: #eee;
+	text-align:  center;
+	white-space: nowrap;
+	position: relative;
+}
+
+.primaryNav .icon {
+	display: none;
+}
+
+
+.primaryNav a:hover,  .primaryNav .active {
+	background-color: #4A90E2;
+}
+
+/* to space th text in blocks, remove the colour changed after clicked and remove underline */
+#nav a {
+/*	display: block;
+	padding: 3px;
+	text-decoration: none;
+	background-color: rgb(59, 64, 68);
+	color: rgb(255, 255, 255);*/
+}
+
+/* to create grey background in block with white text over blcok when hovering mouse over */
+#nav a:hover {
+	background-color: #4A90E2;
+	/*color: #fff;*/
+	color: #eee;
+}
+
+
+
+/* Page heading */
+h2 {
+	background-color: rgb(74, 144, 226, 0.8);
+	width: 300px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom:  40px;
+	text-align: center;
+}
+
+
+/* main page background picture that covers the main area and resizes dynamically */
+#main {
+/*	background-image: url("https://images.pexels.com/photos/258045/pexels-photo-258045.jpeg?cs=srgb&dl=pexels-pixabay-258045.jpg&fm=jpg");
+*/	/*margin-top: -100px;*/
+/*	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;*/
+	/*height:800px;*/
+/*	margin-bottom: 40px;*/
+}
+
+#mainSub {
+	/*background-color: #fff;*/
+	background-color: #eee;
+	margin-top: -100px;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height:800px;
+}
+
+
+/* Giving 10-30 pixel border to tx block, setting main page announcement text to centered with a light grey backgroud at 75% opacity */
+#announcements {
+	/*background-color: rgba(128,128,128, 0.75);*/
+	background-color: rgba(59, 64, 68, 0.75);
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: auto;
+	padding: 10px 30px;
+	-webkit-box-shadow: 2px 4px 15px 1px rgba(0,0,0,0.4); 
+	box-shadow: 2px 4px 15px 1px rgba(0,0,0,0.4);
+	border-radius:  10px;
+}
+
+p {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color:rgb(59, 64, 68);
+	margin-top: 20px;
+	padding:  25px;
+	position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color:  #eee;
+
+}
+
+.homepage footer{
+	position: initial;
+}
+
+footer a {color: #eee; text-decoration: none;}
+
+
+#left {
+    width:33%;
+    float:left;
+}
+#right {
+    width:33%;
+    float:left;
+    overflow:hidden !important;
+}
+
+#center {
+    float:left;
+    width:33%;
+    text-align:center;
+	color:#4A90E2
+}
+
+
+/* Previous examples
+For the about us section to allow images to be floated next to it. Other pages have the "main" id but I needed it to 
+have a different tag to put the images next to it without them being affected by the other code for the "main" section
+#blurb {
+  margin-top: 30px;
+}
+
+
+To increase size of menu items to make it easier to read
+#menuitems {
+  font-size: 20px;
+}
+
+To make picture of gardening on about us page float to the right of the screen away from the left edge
+#gardening  {
+float: left;    
+margin-left: 8%;
+}
+
+To make picture with carrots on about us page float to the right of the screen away from the right edge
+
+#carrots  {
+float: right;
+margin-right: 8%;
+} 
+*/
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*log in button top right corner*/
+button, .button {
+	border-radius:  10px;
+	background: #4A90E2;
+	/*color: #fff;*/
+	color: #eee;
+	padding: 12px 25px;
+	border:  0px;
+	font-weight: 500;
+	cursor: pointer;
+	font-size: 16px;
+}
+.bookNow {
+	margin:  0 auto; 
+	width: 200px;
+}
+
+.logIn {
+
+}
+
+/* Large book now button front page */
+.jumboBtn {
+	border-radius: 40px;
+	/*border: 2px solid #fff;*/
+	border: 2px solid #eee;
+	line-height: 40px;
+	font-size: 18px;
+	font-weight: 500;
+	background: rgba(59, 64, 68, 0.75);
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	padding-left: 35px;
+}
+
+/* formatting of book now button to make it round/look more like a button */
+.btnWrapper {
+	display: inline-block;
+	margin:  0 auto;
+	margin-top: 40px;
+	border-radius:  40px;
+	border: 5px solid rgba(59, 64, 68, 0.75);
+	/*width:  200px;*/
+	/*trying to make just the button a clickable but it's doing the whole width of the page*/
+	cursor: pointer;
+	padding: 5px 0 4px 0;
+}
+
+
+
+/*--------------------------------------------------*/
+/* homepage only
+/*--------------------------------------------------*/
+.homepage {
+	background-color: #000;
+  /*color: #fff;*/
+  color: #eee;
+}
+
+
+/*--------------------------------------------------*/
+/*media queries*/
+/*--------------------------------------------------*/
+
+@media only screen and (min-width: 600px) {
+}
+
+
+
+@media only screen and (min-width: 1012px) {
+/*	@media only screen and (min-width: 900px) {*/
+	header {
+		flex-wrap: initial;
+	}
+
+	h1 {
+	  font-size: 26px;
+	  margin-left:  20px;
+	}
+
+	#logo {
+		/*padding-top: 0px;*/
+	}
+
+	#logo img {
+		height:  140px;
+	}
+
+	header nav {
+		order: initial;
+		margin-left: 5%;
+		width: auto;
+	}
+
+	.primaryNav {
+		font-size: 14px;
+		margin-top: 55px;
+	}
+
+	.primaryNav li {
+		border-radius: 3px 3px 0 0 ;
+		overflow: hidden;
+	}
+	.primaryNav li a { 
+		padding-bottom:  70px;
+		position: relative;
+		font-size: 16px;
+		
+	}
+
+	.primaryNav .icon {
+		font-weight: 100;
+		position: absolute;
+		top:  45px;
+		font-size: 30px;
+	  left: 0; 
+	  right: 0; 
+	  margin-left: auto; 
+	  margin-right: auto; 
+	  width: 45px; /* Need a specific value to work */
+	  color: green;
+	  display: block;
+	}
+
+.primaryNav li:hover .icon, .primaryNav li.active .icon {
+	color: white;
+}
+
+	.servicesLink .icon {
+		/*height:  45px;*/
+		top:  38px;
+		overflow: hidden;
+		font-size: 37px;
+		font-weight: 500;
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+/*	.primaryNav li a:after {
+		content: '';
+		background: url(../images/services.png) no-repeat;
+		position: absolute;
+		left: 0;
+		right: 0;
+		background-size: 50px;
+		height: 50px;
+		width: 50px;
+		margin: auto;
+		margin-top: 50px;
+	}*/
+
+	/* header .socialMedia {
+		display: block;
+		margin-top:  20px;
+		float: right;
+		text-align: right;
+		width: 53px;
+	} */
+	
+	#announcements {
+	  width: 40%;
+	}
+	footer {flex-direction: row;}
+	/* footer .socialMedia {display: none;} */
+}
+
+
+.secondaryNav li {
+	padding:  20px;
+	border:  1px solid #4A90E2;
+	color:rgb(0, 0, 0);
+	cursor: pointer;
+	text-align: left;
+}
+
+.secondaryNav .active {
+	background: #4A90E2;
+	color:#eee;
+
+}
+
+.content {display: none;}
+.content.active {display: block !important}
+
+#serviceDescription{
+	text-align: left;
+	padding: 20px;
+	min-width: 300px;
+
+}
+
+
