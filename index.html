@@ -65,7 +65,7 @@
 				<!-- Home page book now button -->
 
   			<div class="bookNow">
-  				<div class="btnWrapper">
+  				<div class="btnWrapper" id="btnWrapper">
 <!--   					<button class="jumboBtn" id="bookButton" type = "button"> Book Now <span class="icon-chevron-right"></span></button> -->
   					<a href="href="booking.html" class="button jumboBtn" id="bookButton"> Book Now <span class="icon-chevron-right"></span></a>
   				</div>
@@ -90,8 +90,14 @@
 		<footer>
 			
 				<a href="mailto:reception@physio.co.nz?subject=Website enquiry">reception@physio.co.nz</a>
-				<div class="socialMedia">
-					<img src="https://neocities.org/site_thumbnails/39/54/peterjmen/socials.png.210x158.png" alt="Social Media links" width="60%" height="80%">
+				<div class="socialMedia" >
+					<a href="https://www.facebook.com/tearophysio/">
+						<span class="icon-twitter1">
+						<span class="icon-instagram">
+						<span class="icon-facebook1">
+						<span class="icon-youtube1">
+						<span class="icon-google-plus"></a>
+					<!-- <img src="https://neocities.org/site_thumbnails/39/54/peterjmen/socials.png.210x158.png" alt="Social Media links" width="60%" height="80%"> -->
 				</div>
 				<div class="copyright">&copy; Peter Menhinick 2022</div>
 				
@@ -108,3 +114,15 @@
 			<script src="interaction.js"></script>
 			Attributation to source of photo 
 			<p>Image from Pexels</p>-->
+
+			<script>
+				$(document).ready(function(){
+
+				$("#announcements").hide().slideDown(500);
+				$("#btnWrapper").hide().fadeIn(1500);
+
+				
+				
+				});
+
+			</script>

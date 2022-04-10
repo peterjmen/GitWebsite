@@ -524,14 +524,14 @@ button, .button {
 }
 
 .contactUs{
-	margin-top: 5%;
+	/* margin-top: 1%; */
 	margin-left: 5%;
 	float: left;
 	text-align: left;
-	width: 250px;
+	width: 210px;
 	padding:  20px;
 	border:  2px solid #4A90E2;
-	height: 420px;
+	height: 410px;
 }
 
 .map{
@@ -541,5 +541,14 @@ button, .button {
 }
 
 .map img{
-	max-width:25%;
+	max-width:40%;
 	}
+
+#content 
+{
+	height: 750px;
+}
+
+#parking{
+v
+}
