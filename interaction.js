@@ -1,17 +1,15 @@
-// const btn = document.getElementById("myButton");
-
-// btn.addEventListener("click", function(){
-// alert("You clicked me!");
-// })
-
-
 function logInButton() {
-  alert('hi there');
+  var name = prompt('Please enter your name');
+  alert(`Thanks for logging in: ${name}`);
+  document.getElementById("greeting").innerHTML = `Thanks for logging in: ${name}`;
+  Event.preventDefault();
+
+  }
+
+function socialMediaButton() {
+  alert('This will link to social media');
 }
 
-const collection = document.getElementsByClassName("content");
-
-// A $( document ).ready() block.
 $( document ).ready(function() {
    $('.secondaryNav li').on('click', function() {
     $(this).addClass('active').siblings().removeClass('active');
@@ -21,3 +19,4 @@ $( document ).ready(function() {
 
   });
 });
+

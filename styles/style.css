@@ -535,7 +535,7 @@ button, .button {
 }
 
 .map{
-	margin-top:50px;
+	margin-top:2%;
 	float:center;
 	text-align: center;
 }
@@ -546,9 +546,6 @@ button, .button {
 
 #content 
 {
-	height: 750px;
+	height: 720px;
 }
 
-#parking{
-v
-}
