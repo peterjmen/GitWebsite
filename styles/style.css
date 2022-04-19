@@ -590,14 +590,14 @@ button, .button {
 
 .logIn{
 	position:absolute;
-	top: 10px;
+	top: 5px;
 	right : 10px;
 	width: 120px;
 }
 
 .signUp{
 	position:absolute;
-	top: 10px;
+	top: 5px;
 	right : 150px;
 	width: 120px;
 }
