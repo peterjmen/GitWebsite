@@ -20,7 +20,7 @@
 	<body class="servicesPage">
 		<div class="container">
 			
-			<div class="greeting" id ="greeting">Welcome Guest</div>
+			<!-- <div class="greeting" id ="greeting">Welcome Guest</div> -->
 			
 			<header>
 				<!-- Main heading with logo to the left of the words -->
@@ -45,27 +45,108 @@
 				</ul>
 			</nav>
 
-			<!-- Log in button top right of screen -->
 			<div class="account">
 				<div class="logIn">
-					<button id ="logInButton" type="button" onclick="logInButton()">Log in</button>
+					<nav>
+				<ul>
+					<button id ="logInButton" class="signUp" onclick="showSignUp()">Sign Up</button>
+					<button id ="logInButton" class="logIn" onclick="showLogin()">Log in</button>
+				</ul>
+			</nav>
+			</div>
+			</div>
+
+		
+			<div id="signUpMasterContainer" class="signUpMasterContainer">
+				<div id="signUpContainer" class="signUpContainer">
+					<button onclick="hideSignUp()" class="signUpExitBtn">X</button>
+				 
+		
+					<form id="signUpForm">
+						<label for="usernameSignUp">Username</label>
+						<input id="usernameSignUp" name="usernameSignUp" type="text" placeholder="enter a user name" value="">
+						<br /><br />
+						<label for="passwordSignUp">Password</label>
+						<input id="passwordSignUp" type="password" name="passwordSignUp" placeholder="enter a password" value="">
+						<br /><br />
+						<label for="showPassword">Show password</label>
+						<input id="showSignUpPassword" name="showPassword" type="checkbox">
+						<br /><br />
+						<button id="userSignUpBtn" type="submit">Sign up</button>
+					</form>
+		
 				</div>
 			</div>
+		
+			<div id="loginMasterContainer" class="loginMasterContainer">
+				<div id="loginContainer" class="loginContainer">
+					<button onclick="hideLogin()" class="loginExitBtn">X</button>
+					
+					<!-- login form -->
+					<form id="loginForm">
+						<label for="usernameLogin">Username</label>
+						<input id="usernameLogin" name="usernameLogin" type="text" placeholder="enter your username">
+						<br /><br />
+						<label for="passwordLogin">Password</label>
+						<input type="password" id="passwordLogin" name="passwordLogin" placeholder="enter your password">
+						<br /><br />
+						<label for="showPasswordLogin">show password</label>
+						<input type="checkbox" id="showPasswordLogin">
+						<br /><br />
+						<button id="userLoginBtn" type="submit">Login</button>
+					</form>
+		
+		
+				</div>
+			</div>
+
+
 			</header>
 
 		  <!-- main text body-->
 		  <div id="m" class="layout2">
-			
+
+			<div id = "content">
 <form id="form">
 	Name: <input type="text" class="formField" id="nameField" placeholder="Name"></input>
+	Surname: <input type="text" class="formField" id="surnameField" placeholder="Surnaname"></input>
 	Email: <input type="text" class="formField" id="emailField" placeholder="Email"></input>
-	Number: <input type="text" class="formField" id="numberfield" placeholder="Email"></input>
-	Country: <select id="Country" name="Country">
-				<option value="New Zealand">New Zealand</option>
-				<option value="Australia">Australia</option>
-				<option value="South Africa">South Africa</option>
+	Number: <input type="text" class="formField" id="numberField" placeholder="Phone Number"></input>
+	Day: <select id="Day" name="Day">
+		<option value="Monday">Monday</option>
+		<option value="Tuesday">Tuesday</option>
+		<option value="Wednesday">Wednesday</option>
+		<option value="Thursday">Thursday</option>
+		<option value="Friday">Friday</option>
+	</select>
+	Time: <select id="Time" name="Time">
+		<option value="9am">9am</option>
+		<option value="10am">10am</option>
+		<option value="11am">11am</option>
+		<option value="12pm">12pm</option>
+		<option value="1pm">1pm</option>
+		<option value="2pm">2pm</option>
+		<option value="3pm">3pm</option>
+		<option value="4pm">4pm</option>
+	</select>
+	Service: <select id="Service" name="Service">
+		<option value="Physiotherapy">Physiotherapy</option>
+		<option value="Massage">Massage</option>
+		<option value="Dry Needling">Dry Needling</option>
+		<option value="Exercise Prescription">Exercise Prescription</option>
+		<option value="Manual Therapy">Manual Therapy</option>
+	</select>
+	Practitioner: <select id="Practitioner" name="Practitioner">
+				<option value="Senior Physiotherapist">Senior Physiotherapist</option>
+				<option value="Physiotherapist">Physiotherapist</option>
+				<option value="Junior Physiotherapist">Junior Physiotherapist</option>
+				<option value="Massage Therapist">Massage Therapist</option>
 			</select>
+			<input class = "button" id="submitBtn" type="submit" value="Book Appointment" onclick="bookAppointment(event)">
 </form>
+</div>
+<!-- <button class="logInButton" id="bookAppointmentBtn" onclick="bookAppointment()">Book Appointment<span class="icon-chevron-right"></span></button> -->
+
 			
 
 

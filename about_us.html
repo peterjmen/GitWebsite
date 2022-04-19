@@ -20,7 +20,7 @@
 	<body class="servicesPage">
 		<div class="container">
 			
-			<div class="greeting" id ="greeting">Welcome Guest</div>
+			<!-- <div class="greeting" id ="greeting">Welcome Guest</div> -->
 			
 			<header>
 				<!-- Main heading with logo to the left of the words -->
@@ -45,12 +45,63 @@
 				</ul>
 			</nav>
 
-			<!-- Log in button top right of screen -->
 			<div class="account">
 				<div class="logIn">
-					<button id ="logInButton" type="button" onclick="logInButton()">Log in</button>
+					<nav>
+				<ul>
+					<button id ="logInButton" class="signUp" onclick="showSignUp()">Sign Up</button>
+					<button id ="logInButton" class="logIn" onclick="showLogin()">Log in</button>
+				</ul>
+			</nav>
+			</div>
+			</div>
+
+		
+			<div id="signUpMasterContainer" class="signUpMasterContainer">
+				<div id="signUpContainer" class="signUpContainer">
+					<button onclick="hideSignUp()" class="signUpExitBtn">X</button>
+				 
+		
+					<form id="signUpForm">
+						<label for="usernameSignUp">Username</label>
+						<input id="usernameSignUp" name="usernameSignUp" type="text" placeholder="enter a user name" value="">
+						<br /><br />
+						<label for="passwordSignUp">Password</label>
+						<input id="passwordSignUp" type="password" name="passwordSignUp" placeholder="enter a password" value="">
+						<br /><br />
+						<label for="showPassword">Show password</label>
+						<input id="showSignUpPassword" name="showPassword" type="checkbox">
+						<br /><br />
+						<button id="userSignUpBtn" type="submit">Sign up</button>
+					</form>
+		
 				</div>
 			</div>
+		
+			<div id="loginMasterContainer" class="loginMasterContainer">
+				<div id="loginContainer" class="loginContainer">
+					<button onclick="hideLogin()" class="loginExitBtn">X</button>
+					
+					<!-- login form -->
+					<form id="loginForm">
+						<label for="usernameLogin">Username</label>
+						<input id="usernameLogin" name="usernameLogin" type="text" placeholder="enter your username">
+						<br /><br />
+						<label for="passwordLogin">Password</label>
+						<input type="password" id="passwordLogin" name="passwordLogin" placeholder="enter your password">
+						<br /><br />
+						<label for="showPasswordLogin">show password</label>
+						<input type="checkbox" id="showPasswordLogin">
+						<br /><br />
+						<button id="userLoginBtn" type="submit">Login</button>
+					</form>
+		
+		
+				</div>
+			</div>
+
+
+
 			</header>
 
 			<div id = "content">
@@ -60,17 +111,17 @@
 						<nav class="secondaryNav">
 							<ol>
 									<!-- service 1 below-->
-								<li id="te_aro_physiotherapy" class="active">te_aro_physiotherapy</li>
+								<li id="te_aro_physiotherapy" class="active">Te Aro Physiotherapy</li>
 									<!-- service 2 below-->
-								<li id="the_team">the_team</li>
+								<li id="the_team">The Team</li>
 									<!-- service 3 below-->
-								<li id="massage_therapist">massage_therapist</li>
+								<li id="senior_physio">Senior Physiotherapist</li>
 									<!-- service 4 below-->
-								<li id="physio_therapist">physio_therapist</li>
+								<li id="physio_therapist">Physiotherapist</li>
 									<!-- service 5 below-->
-								<li id="physio_one">physio_one</li>
+								<li id="junior_physio">Junior Physiotherapist</li>
 									<!-- service 6 below-->
-									<li id="physio_two">physio_two</li>
+								<li id="massage_therapist">Massage Therapist</li>
 							</ol>
 						</nav>
 					</div>
@@ -80,7 +131,7 @@
 						<div class="center" id="serviceDescription">
 				<!-- service 1 below-->
 							<div class="active content te_aro_physiotherapy" >
-							<h3>Exercise te_aro_physiotherapy</h3>
+							<h3>Te Aro Physiotherapy</h3>
 							<p>We are experienced in treating  musculoskeletal injuries and can help you right from day one of your injury until 
 								you are fully active again. We can help with chronic conditions and offer advice and exercise prescription to enhance your well-being.
 								If you experience pain or stiffness in any part of your body, our physiotherapists are trained to assess and diagnose your problem. 
@@ -88,28 +139,63 @@
 							</div>
 					<!-- service 2 below-->
 							<div class="content the_team">
-								<h3>the_team</h3>
-								<p>the_team is.....</p>
+								<h3>The Team</h3>
+								<p>The Team are Experienced physiotherapists using proven assessment and diagnostic frame works.
+									A tailored treatment approach to ensure a fast recovery and return to the activities you love.
+									The full spectrum of musculoskeletal care, a "one-stop-shop" for your injury or chronic condition. 
+									We come to your work place, sports venue or dance class, treat you in the clinic and refer you to 
+									other specialists, whatever is needed to get you where you want to be.</p>
+
+
 							</div>
 					<!-- service 3 below-->
-							<div class="content massage_therapist">
-								<h3>massage_therapist</h3>
-								<p></p>massage_therapist is.....</p>
+							<div class="content senior_physio">
+								<h3>Senior Physiotherapist</h3>
+								<p>The senior spsiotherpist is
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nibh nulla, id fermentum dolor aliquam sit amet. 
+									Sed a accumsan magna, ornare malesuada ligula. Pellentesque vitae aliquam magna, ut faucibus orci. Ut ut lobortis massa. 
+									Mauris sit amet vestibulum felis.  </p>
+									<li id="quals" >Bachelor of Physiotherapy</li>
+									<li id="quals" >McKenzie Therapy trained</li>
+									<li id="quals" >Dry needling qualification</li>
+									<li id="quals" >Certificate of Manual Therapy</li>
+
 							</div>
 					<!-- service 4 below-->
 					<div class="content physio_therapist">
-						<h3>physio_therapist</h3>
-						<p>physio_therapist is.....</p>
+						<h3>Physiotherapist</h3>
+						<p>Physiotherapist is									
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nibh nulla, id fermentum dolor aliquam sit amet. 
+							Sed a accumsan magna, ornare malesuada ligula. Pellentesque vitae aliquam magna, ut faucibus orci. Ut ut lobortis massa. 
+							Mauris sit amet vestibulum felis. Morbi ac sodales enim, non malesuada tellus. Nunc at malesuada neque. Cras ex turpis, 
+							faucibus a erat eu, sagittis consectetur nibh.</p>
+							<li id="quals" >Bachelor of Physiotherapy</li>
+							<li id="quals" >Dry needling qualification</li>
+							<li id="quals" >Certificate of Manual Therapy</li>
 					</div>
 					<!-- service5 below-->
-					<div class="content physio_one">
-						<h3>physio_one</h3>
-						<p>physio_one is.....</p>
+					<div class="content junior_physio">
+						<h3>Junior Physiotherapist</h3>
+						<p>Junior Physiotherapist is
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nibh nulla, id fermentum dolor aliquam sit amet. 
+							Sed a accumsan magna, ornare malesuada ligula. Pellentesque vitae aliquam magna, ut faucibus orci. Ut ut lobortis massa. 
+							Mauris sit amet vestibulum felis. Morbi ac sodales enim, non malesuada tellus. Nunc at malesuada neque. Cras ex turpis, 
+							faucibus a erat eu, sagittis consectetur nibh.
+						</p>
+						<li id="quals" >Bachelor of Physiotherapy</li>
+						<li id="quals" >Certificate of Manual Therapy</li>
 						</div>
 					<!-- service 6 below-->
-					<div class="content physio_two">
-						<h3>physio_two</h3>
-						<p>physio_two is.....</p>
+					<div class="content massage_therapist">
+						<h3>Massage Therapist</h3>
+						<p>Massage Therapist is 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat nibh nulla, id fermentum dolor aliquam sit amet. 
+							Sed a accumsan magna, ornare malesuada ligula. Pellentesque vitae aliquam magna, ut faucibus orci. Ut ut lobortis massa. 
+							Mauris sit amet vestibulum felis. Morbi ac sodales enim, non malesuada tellus. Nunc at malesuada neque. Cras ex turpis, 
+							faucibus a erat eu, sagittis consectetur nibh.
+						</p>
+						<li id="quals" >Certificate of therapetic massage</li>
+
 					</div>
 						</div>
 
@@ -118,33 +204,33 @@
 						<div class="right" id="servicePics">
 					<!-- service 1 below-->
 							<div class="active content te_aro_physiotherapy">
-								<img src="https://images.pexels.com/photos/5793954/pexels-photo-5793954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="man using pulldown weights" title="Man dong TRX row">
-								<span>Photo by Kampus Production from Pexels</span>
+								<img src="https://images.pexels.com/photos/5793954/pexels-photo-5793954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Women sitting on bed with female physiotherapist touching shoulder" title="Physio working on posture">
+								<span>Photo by Yan Krukov from Pexels</span>
 							</div>
 					<!-- service 2 below-->
 							<div class="content the_team">
-								<img src="https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="physioing" title="person doing physio">
-								<span>Photo by xxxx</span>
+								<img src="https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Picture of a group of women standing in line in front fo a desk" title="Te Aro Physio Team">
+								<span>Photo by Christina Morillo from Pexels</span>
 							</div>
 					<!-- service 3 below-->	
-					<div class="content massage_therapist">
-						<img src="https://images.pexels.com/photos/3764568/pexels-photo-3764568.jpeg" alt="physioing" title="person doing physio">
-						<span>Photo by CHANGEME</span>
+					<div class="content senior_physio">
+						<img src="https://images.pexels.com/photos/5793904/pexels-photo-5793904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Patient lying on plinth doing exercises with physiotherapists hands on direction" title="Physio teaching pilates">
+						<span>Photo by Yan Krukov from Pexels</span>
 					</div>
 						<!-- service 4 below-->
 					<div class="content physio_therapist">
-						<img src="https://images.pexels.com/photos/6111584/pexels-photo-6111584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="physioing" title="person doing physio">
-						<span>Photo by xxxx</span>
+						<img src="https://images.pexels.com/photos/6111584/pexels-photo-6111584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Physiotherepist holding patients leg during exercise" title="Physio teaching exercises">
+						<span>Photo by Kampus Production from Pexels</span>
 					</div>
 						<!-- service5 below-->
-						<div class="content physio_one">
-							<img src="https://images.pexels.com/photos/8312894/pexels-photo-8312894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="physioing" title="person doing physio">
-							<span>Photo by xxxx</span>
+						<div class="content junior_physio">
+							<img src="https://images.pexels.com/photos/8312894/pexels-photo-8312894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Physiotherapist performing dry needlingto paitnets hand" title="Dry needling picture">
+							<span>Photo by RODNAE Productions from Pexels</span>
 						</div>
 						<!-- service 6 below-->
-						<div class="content physio_two">
-							<img src="https://images.pexels.com/photos/5793904/pexels-photo-5793904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="physioing" title="person doing physio">
-							<span>Photo by xxxx</span>
+						<div class="content massage_therapist">
+							<img src="https://images.pexels.com/photos/3764568/pexels-photo-3764568.jpeg" alt="Patient lying face up reciving massage to shoulders" title="Massage therapy">
+							<span>Photo by CHANGEME</span>
 						</div>
 						</div>
 				<!-- right ends here-->

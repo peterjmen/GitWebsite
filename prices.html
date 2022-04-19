@@ -20,7 +20,7 @@
 	<body class="servicesPage">
 		<div class="container">
 			
-			<div class="greeting" id ="greeting">Welcome Guest</div>
+			<!-- <div class="greeting" id ="greeting">Welcome Guest</div> -->
 			
 			<header>
 				<!-- Main heading with logo to the left of the words -->
@@ -45,13 +45,65 @@
 				</ul>
 			</nav>
 
-			<!-- Log in button top right of screen -->
 			<div class="account">
 				<div class="logIn">
-					<button id ="logInButton" type="button" onclick="logInButton()">Log in</button>
+					<nav>
+				<ul>
+					<button id ="logInButton" class="signUp" onclick="showSignUp()">Sign Up</button>
+					<button id ="logInButton" class="logIn" onclick="showLogin()">Log in</button>
+				</ul>
+			</nav>
+			</div>
+			</div>
+
+		
+			<div id="signUpMasterContainer" class="signUpMasterContainer">
+				<div id="signUpContainer" class="signUpContainer">
+					<button onclick="hideSignUp()" class="signUpExitBtn">X</button>
+				 
+		
+					<form id="signUpForm">
+						<label for="usernameSignUp">Username</label>
+						<input id="usernameSignUp" name="usernameSignUp" type="text" placeholder="enter a user name" value="">
+						<br /><br />
+						<label for="passwordSignUp">Password</label>
+						<input id="passwordSignUp" type="password" name="passwordSignUp" placeholder="enter a password" value="">
+						<br /><br />
+						<label for="showPassword">Show password</label>
+						<input id="showSignUpPassword" name="showPassword" type="checkbox">
+						<br /><br />
+						<button id="userSignUpBtn" type="submit">Sign up</button>
+					</form>
+		
 				</div>
 			</div>
+		
+			<div id="loginMasterContainer" class="loginMasterContainer">
+				<div id="loginContainer" class="loginContainer">
+					<button onclick="hideLogin()" class="loginExitBtn">X</button>
+					
+					<!-- login form -->
+					<form id="loginForm">
+						<label for="usernameLogin">Username</label>
+						<input id="usernameLogin" name="usernameLogin" type="text" placeholder="enter your username">
+						<br /><br />
+						<label for="passwordLogin">Password</label>
+						<input type="password" id="passwordLogin" name="passwordLogin" placeholder="enter your password">
+						<br /><br />
+						<label for="showPasswordLogin">show password</label>
+						<input type="checkbox" id="showPasswordLogin">
+						<br /><br />
+						<button id="userLoginBtn" type="submit">Login</button>
+					</form>
+		
+		
+				</div>
+			</div>
+
+
 			</header>
+
+			<div class="greeting" id ="greeting">Do not give feedback on this page - not assessed</div>
 
 		  <!-- main text body-->
 			<div id="m" class="layoutPrices">
