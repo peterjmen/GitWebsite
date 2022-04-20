@@ -605,6 +605,12 @@ button, .button {
 #form{
 	padding: 20px;
 	display: block;
+	min-width: 45%;
+	max-width: 45%;
+	margin-left: 25%;
+	margin-right: 25%;
+	float: center;
+	
 }
 
 /* Style inputs */
@@ -616,6 +622,7 @@ input[type=text], select, input[type=password] {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
+
   }
   
   /* Style the submit button */
@@ -628,4 +635,6 @@ input[type=text], select, input[type=password] {
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
+
   }
+
